@@ -45,6 +45,8 @@ static NSString * const CollectionCellReuseIdentifier = @"CollectionCell";
 {
     [super viewDidLoad];
     
+    self.tableView.accessibilityIdentifier = @"Albums Table";
+    
     //Navigation bar customization_
     if(self.picker.customNavigationBarPrompt)
     {

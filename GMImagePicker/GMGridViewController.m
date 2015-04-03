@@ -118,6 +118,8 @@ NSString * const GMGridViewCellIdentifier = @"GMGridViewCellIdentifier";
     [super viewDidLoad];
     [self setupViews];
     
+    self.collectionView.accessibilityIdentifier = @"Photos Collection";
+    
     //Navigation bar customization_
     if(self.picker.customNavigationBarPrompt)
     {
